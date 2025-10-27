@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio - Azary Douglass</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="login-btn" onclick="openModal('loginModal')">Login</button>
+                </li>
+                <li class="nav-item">
+                    <button class="signup-btn" onclick="openModal('signupModal')">Sign Up</button>
+                </li>
+            </ul>
+         
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="videos/5385341-uhd_2160_4096_30fps.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Creative Developer</h1>
+            <p class="hero-subtitle">Building Digital Experiences That Inspire</p>
+            <div class="hero-buttons">
+                <a href="#work" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Passionate about creating beautiful and functional digital experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello, I'm a Creative Developer</h3>
+                    <p>With over 5 years of experience in web development and design, I specialize in creating engaging user experiences that combine beautiful aesthetics with robust functionality. My passion lies in turning complex problems into simple, elegant solutions.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Frontend Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="logo/Nodejs.png" alt="">
+                       <i class="fas fa-user"></i>
+                        <p>Your Photo Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Work</h2>
+                <p>Some of my recent projects and creative endeavors</p>
+            </div>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Full-stack e-commerce solution with modern UI</p>
+                            <a href="#" class="work-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <h4>Mobile App Design</h4>
+                            <p>Beautiful mobile application with intuitive UX</p>
+                            <a href="#" class="work-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <h4>Brand Identity</h4>
+                            <p>Complete brand identity and visual design</p>
+                            <a href="#" class="work-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <h4>Dashboard Design</h4>
+                            <p>Analytics dashboard with data visualization</p>
+                            <a href="#" class="work-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resume</h2>
+                <p>My professional journey and achievements</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-download">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Senior Frontend Developer</h4>
+                            <p class="timeline-company">Tech Company Inc.</p>
+                            <p class="timeline-date">2022 - Present</p>
+                            <p>Leading frontend development initiatives and mentoring junior developers.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Frontend Developer</h4>
+                            <p class="timeline-company">Digital Agency</p>
+                            <p class="timeline-date">2020 - 2022</p>
+                            <p>Developed responsive web applications and collaborated with design teams.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Junior Web Developer</h4>
+                            <p class="timeline-company">StartupXYZ</p>
+                            <p class="timeline-date">2019 - 2020</p>
+                            <p>Started my professional journey building web applications and learning new technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's collaborate and create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>pixelonictechx@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 107096265</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" onclick="switchModal('loginModal', 'signupModal')">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" required> I agree to the Terms and Conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <p class="auth-switch">Already have an account? <a href="#" onclick="switchModal('signupModal', 'loginModal')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Creating digital experiences that inspire and engage users across all platforms.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> pixelonictechx@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +254 107096265</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creative  Mind Portfolio | All rights reserved | Built for the web | Design by Azary Douglass</p>
+                <!-- Comments for easy understanding -->
+                <!-- This footer contains:
+                     1. Copyright notice with current year
+                     2. Rights reserved statement
+                     4. Clear indication this is built for web -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
